@@ -1,0 +1,237 @@
+/* Login Logo */
+.ims-login-logo {
+  display: block;
+  margin: 0 auto 1rem auto;
+  height: 90px;
+  width: 90px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.12);
+  background: #fff;
+  object-fit: cover;
+}
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f7fa;
+  position: relative;
+  z-index: 0;
+}
+
+/* Full-page inventory background image (only for Inventory module) */
+
+/* Ensure content is above the background */
+.ims-content, .ims-header, .ims-sidebar, .ims-footer {
+  position: relative;
+  z-index: 2;
+}
+
+/* Header */
+.ims-header {
+  background: #2d3e50;
+  color: #fff;
+  padding: 1.5rem 2rem 1rem 2rem;
+  border-bottom: 3px solid #e0e0e0;
+  height: 150px;
+}
+.ims-header-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  justify-content: flex-start;
+}
+.ims-logo {
+  height: 150px;
+  width: 150px;
+  border-radius: 50px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.12);
+  background: #fff;
+  object-fit: cover;
+}
+.ims-title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.ims-subtitle {
+  font-size: 1.1rem;
+  color: #b0c4d8;
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+/* Main Layout */
+.ims-main-layout {
+  display: flex;
+  flex: 1;
+  min-height: 70vh;
+  background: #f7f7fa;
+}
+.ims-sidebar {
+  min-width: 200px;
+  background: #e3eafc;
+  border-right: 1px solid #e0e0e0;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.ims-nav-btn {
+  background: #f7f7fa;
+  color: #2d3e50;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  width: 100%;
+  text-align: left;
+}
+.ims-nav-btn:hover {
+  background: #b3c6f7;
+  color: #1a2a40;
+}
+.ims-nav-btn.active {
+  background: #4a90e2;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+}
+
+/* Content Area */
+.ims-content {
+  flex: 1;
+  padding: 2.5rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: #f7f7fa;
+}
+.ims-content-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.ims-content-desc {
+  color: #888;
+  font-size: 1rem;
+}
+.ims-content-main {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+  padding: 2rem;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.ims-content-footer {
+  margin-top: 1.5rem;
+  color: #aaa;
+  font-size: 0.95rem;
+  text-align: right;
+}
+
+/* Footer */
+.ims-footer {
+  background: #2d3e50;
+  color: #b0c4d8;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.95rem;
+}
+
+/* Login Styles */
+.ims-login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f7fa;
+}
+.ims-login-form {
+  background: #fff;
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(44,62,80,0.10);
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: stretch;
+}
+.ims-login-form h2 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.ims-login-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.ims-login-field label {
+  font-size: 1rem;
+  color: #2d3e50;
+}
+.ims-login-field input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #b0c4d8;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.ims-login-btn {
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.ims-login-btn:hover {
+  background: #357ab8;
+}
+.ims-login-error {
+  color: #d32f2f;
+  background: #ffeaea;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.ims-inventory-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(44,62,80,0.08);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.ims-section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.ims-nav-btn.logout {
+  background-color: #ffebee;
+  color: #c62828;
+  border: 1px solid #ef9a9a;
+  margin-top: 12px;
+  transition: all 0.2s ease-in-out;
+  font-weight: 777;
+}
+
+.ims-nav-btn.logout:hover {
+  background-color: #c62828;
+  color: #fff;
+}
